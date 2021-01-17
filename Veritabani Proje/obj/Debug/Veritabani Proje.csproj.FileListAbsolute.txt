@@ -1,0 +1,25 @@
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani Proje.csprojAssemblyReference.cache
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani_Proje.AnaMenu.resources
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani_Proje.FiyatGüncelle.resources
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani_Proje.LoginScreen.resources
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani_Proje.Properties.Resources.resources
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani Proje.csproj.GenerateResource.cache
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani Proje.csproj.CoreCompileInputs.cache
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\bin\Debug\Veritabani Proje.exe.config
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\bin\Debug\Veritabani Proje.exe
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\bin\Debug\Veritabani Proje.pdb
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\bin\Debug\MetroFramework.Design.dll
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\bin\Debug\MetroFramework.dll
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani Proje.csproj.CopyComplete
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani Proje.exe
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani Proje.pdb
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani_Proje.MarketEkle.resources
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani_Proje.StokEkle.resources
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani_Proje.SatışForm.resources
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani_Proje.ÜrünEkle.resources
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani_Proje.StokKontrol.resources
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani_Proje.personelForm.resources
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani_Proje.MarketForm.resources
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani_Proje.LogForm.resources
+C:\Users\Oytun Tur\source\repos\Veritabani Proje\Veritabani Proje\obj\Debug\Veritabani_Proje.PersonelSil.resources

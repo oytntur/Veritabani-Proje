@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MarketDataSet2" targetNamespace="http://tempuri.org/MarketDataSet2.xsd" xmlns:mstns="http://tempuri.org/MarketDataSet2.xsd" xmlns="http://tempuri.org/MarketDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MarketConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MarketConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Veritabani_Proje.Properties.Settings.GlobalReference.Default.MarketConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="logViewTableAdapter" GeneratorDataComponentClassName="logViewTableAdapter" Name="logView" UserDataComponentName="logViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MarketConnectionString (Settings)" DbObjectName="Market.dbo.logView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, [Yapan Kişi TC], Açıklaması FROM dbo.logView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Yapan Kişi TC" DataSetColumn="Yapan Kişi TC" />
+              <Mapping SourceColumn="Açıklaması" DataSetColumn="Açıklaması" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MarketDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MarketDataSet2" msprop:Generator_UserDSName="MarketDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="logView" msprop:Generator_TableClassName="logViewDataTable" msprop:Generator_TableVarName="tablelogView" msprop:Generator_TablePropName="logView" msprop:Generator_RowDeletingName="logViewRowDeleting" msprop:Generator_RowChangingName="logViewRowChanging" msprop:Generator_RowEvHandlerName="logViewRowChangeEventHandler" msprop:Generator_RowDeletedName="logViewRowDeleted" msprop:Generator_UserTableName="logView" msprop:Generator_RowChangedName="logViewRowChanged" msprop:Generator_RowEvArgName="logViewRowChangeEvent" msprop:Generator_RowClassName="logViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Yapan_x0020_Kişi_x0020_TC" msprop:Generator_ColumnVarNameInTable="columnYapan_Kişi_TC" msprop:Generator_ColumnPropNameInRow="Yapan_Kişi_TC" msprop:Generator_ColumnPropNameInTable="Yapan_Kişi_TCColumn" msprop:Generator_UserColumnName="Yapan Kişi TC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Açıklaması" msprop:Generator_ColumnVarNameInTable="columnAçıklaması" msprop:Generator_ColumnPropNameInRow="Açıklaması" msprop:Generator_ColumnPropNameInTable="AçıklamasıColumn" msprop:Generator_UserColumnName="Açıklaması" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="350" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:logView" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

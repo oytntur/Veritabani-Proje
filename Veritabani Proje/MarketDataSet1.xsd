@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MarketDataSet1" targetNamespace="http://tempuri.org/MarketDataSet1.xsd" xmlns:mstns="http://tempuri.org/MarketDataSet1.xsd" xmlns="http://tempuri.org/MarketDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MarketConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MarketConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Veritabani_Proje.Properties.Settings.GlobalReference.Default.MarketConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="marketGoruntuleTableAdapter" GeneratorDataComponentClassName="marketGoruntuleTableAdapter" Name="marketGoruntule" UserDataComponentName="marketGoruntuleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MarketConnectionString (Settings)" DbObjectName="Market.dbo.marketGoruntule" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, Adı, Adresi FROM dbo.marketGoruntule</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Adı" DataSetColumn="Adı" />
+              <Mapping SourceColumn="Adresi" DataSetColumn="Adresi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="personelTabloTableAdapter" GeneratorDataComponentClassName="personelTabloTableAdapter" Name="personelTablo" UserDataComponentName="personelTabloTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MarketConnectionString (Settings)" DbObjectName="Market.dbo.personelTablo" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, [Personel TC], [Çalıştığı Market], Mevkisi, Şifresi FROM dbo.personelTablo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Personel TC" DataSetColumn="Personel TC" />
+              <Mapping SourceColumn="Çalıştığı Market" DataSetColumn="Çalıştığı Market" />
+              <Mapping SourceColumn="Mevkisi" DataSetColumn="Mevkisi" />
+              <Mapping SourceColumn="Şifresi" DataSetColumn="Şifresi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="stokGoruntuleTableAdapter" GeneratorDataComponentClassName="stokGoruntuleTableAdapter" Name="stokGoruntule" UserDataComponentName="stokGoruntuleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MarketConnectionString (Settings)" DbObjectName="Market.dbo.stokGoruntule" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Ürün Adı], [Market Adı], [Ürün Fiyat], [Stok Sayısı] FROM dbo.stokGoruntule</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Ürün Adı" DataSetColumn="Ürün Adı" />
+              <Mapping SourceColumn="Market Adı" DataSetColumn="Market Adı" />
+              <Mapping SourceColumn="Ürün Fiyat" DataSetColumn="Ürün Fiyat" />
+              <Mapping SourceColumn="Stok Sayısı" DataSetColumn="Stok Sayısı" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MarketDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MarketDataSet1" msprop:Generator_UserDSName="MarketDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="marketGoruntule" msprop:Generator_TableClassName="marketGoruntuleDataTable" msprop:Generator_TableVarName="tablemarketGoruntule" msprop:Generator_TablePropName="marketGoruntule" msprop:Generator_RowDeletingName="marketGoruntuleRowDeleting" msprop:Generator_RowChangingName="marketGoruntuleRowChanging" msprop:Generator_RowEvHandlerName="marketGoruntuleRowChangeEventHandler" msprop:Generator_RowDeletedName="marketGoruntuleRowDeleted" msprop:Generator_UserTableName="marketGoruntule" msprop:Generator_RowChangedName="marketGoruntuleRowChanged" msprop:Generator_RowEvArgName="marketGoruntuleRowChangeEvent" msprop:Generator_RowClassName="marketGoruntuleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Adı" msprop:Generator_ColumnVarNameInTable="columnAdı" msprop:Generator_ColumnPropNameInRow="Adı" msprop:Generator_ColumnPropNameInTable="AdıColumn" msprop:Generator_UserColumnName="Adı" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adresi" msprop:Generator_ColumnVarNameInTable="columnAdresi" msprop:Generator_ColumnPropNameInRow="Adresi" msprop:Generator_ColumnPropNameInTable="AdresiColumn" msprop:Generator_UserColumnName="Adresi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="personelTablo" msprop:Generator_TableClassName="personelTabloDataTable" msprop:Generator_TableVarName="tablepersonelTablo" msprop:Generator_TablePropName="personelTablo" msprop:Generator_RowDeletingName="personelTabloRowDeleting" msprop:Generator_RowChangingName="personelTabloRowChanging" msprop:Generator_RowEvHandlerName="personelTabloRowChangeEventHandler" msprop:Generator_RowDeletedName="personelTabloRowDeleted" msprop:Generator_UserTableName="personelTablo" msprop:Generator_RowChangedName="personelTabloRowChanged" msprop:Generator_RowEvArgName="personelTabloRowChangeEvent" msprop:Generator_RowClassName="personelTabloRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Personel_x0020_TC" msprop:Generator_ColumnVarNameInTable="columnPersonel_TC" msprop:Generator_ColumnPropNameInRow="Personel_TC" msprop:Generator_ColumnPropNameInTable="Personel_TCColumn" msprop:Generator_UserColumnName="Personel TC">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Çalıştığı_x0020_Market" msprop:Generator_ColumnVarNameInTable="columnÇalıştığı_Market" msprop:Generator_ColumnPropNameInRow="Çalıştığı_Market" msprop:Generator_ColumnPropNameInTable="Çalıştığı_MarketColumn" msprop:Generator_UserColumnName="Çalıştığı Market" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mevkisi" msprop:Generator_ColumnVarNameInTable="columnMevkisi" msprop:Generator_ColumnPropNameInRow="Mevkisi" msprop:Generator_ColumnPropNameInTable="MevkisiColumn" msprop:Generator_UserColumnName="Mevkisi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Şifresi" msprop:Generator_ColumnVarNameInTable="columnŞifresi" msprop:Generator_ColumnPropNameInRow="Şifresi" msprop:Generator_ColumnPropNameInTable="ŞifresiColumn" msprop:Generator_UserColumnName="Şifresi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="stokGoruntule" msprop:Generator_TableClassName="stokGoruntuleDataTable" msprop:Generator_TableVarName="tablestokGoruntule" msprop:Generator_TablePropName="stokGoruntule" msprop:Generator_RowDeletingName="stokGoruntuleRowDeleting" msprop:Generator_RowChangingName="stokGoruntuleRowChanging" msprop:Generator_RowEvHandlerName="stokGoruntuleRowChangeEventHandler" msprop:Generator_RowDeletedName="stokGoruntuleRowDeleted" msprop:Generator_UserTableName="stokGoruntule" msprop:Generator_RowChangedName="stokGoruntuleRowChanged" msprop:Generator_RowEvArgName="stokGoruntuleRowChangeEvent" msprop:Generator_RowClassName="stokGoruntuleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Ürün_x0020_Adı" msprop:Generator_ColumnVarNameInTable="columnÜrün_Adı" msprop:Generator_ColumnPropNameInRow="Ürün_Adı" msprop:Generator_ColumnPropNameInTable="Ürün_AdıColumn" msprop:Generator_UserColumnName="Ürün Adı" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Market_x0020_Adı" msprop:Generator_ColumnVarNameInTable="columnMarket_Adı" msprop:Generator_ColumnPropNameInRow="Market_Adı" msprop:Generator_ColumnPropNameInTable="Market_AdıColumn" msprop:Generator_UserColumnName="Market Adı" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ürün_x0020_Fiyat" msprop:Generator_ColumnVarNameInTable="columnÜrün_Fiyat" msprop:Generator_ColumnPropNameInRow="Ürün_Fiyat" msprop:Generator_ColumnPropNameInTable="Ürün_FiyatColumn" msprop:Generator_UserColumnName="Ürün Fiyat" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Stok_x0020_Sayısı" msprop:Generator_ColumnVarNameInTable="columnStok_Sayısı" msprop:Generator_ColumnPropNameInRow="Stok_Sayısı" msprop:Generator_ColumnPropNameInTable="Stok_SayısıColumn" msprop:Generator_UserColumnName="Stok Sayısı" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:marketGoruntule" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="personelTablo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:personelTablo" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
